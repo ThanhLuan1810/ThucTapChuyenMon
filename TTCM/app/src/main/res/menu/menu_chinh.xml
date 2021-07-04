@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/idDV"
+        android:title="Dịch Vụ"/>
+    <item android:id="@+id/idHD"
+        android:title="Hoá Đơn"/>
+    <item android:id="@+id/idThem"
+        android:title="Thêm Phòng Trọ"/>
+</menu>

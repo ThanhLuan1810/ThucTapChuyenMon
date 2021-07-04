@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/txtTieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Thêm khách"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Tên Khách:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTenKhach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Họ và tên"
+            android:textSize="20sp"
+            android:ems="9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Giới tính:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/rdgGioitinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="Nam"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:text="Nữ"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Năm sinh:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editNamSinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:ems="9"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="CMND:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editCMND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:ems="9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Ngày cấp: "
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:ems="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editThang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLength="2"
+            android:inputType="number"
+            android:ems="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:ems="4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Điện thoại:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editSDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:ems="9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnThemKhach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Thêm"
+            android:textSize="20sp"
+            android:backgroundTint="#06F310"/>
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Huỷ"
+            android:backgroundTint="#F81504"/>
+
+    </LinearLayout>
+
+</LinearLayout>

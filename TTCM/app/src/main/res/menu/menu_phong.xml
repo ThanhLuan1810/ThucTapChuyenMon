@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuChiTiet"
+        android:title="Xem chi tiết" />
+    <item
+        android:id="@+id/menuUpDel"
+        android:title="Cập nhật, xoá" />
+    <item
+        android:id="@+id/menuTraPhong"
+        android:title="Trả phòng" />
+    <item
+        android:id="@+id/menuLapHD"
+        android:title="Lập hoá đơn" />
+</menu>

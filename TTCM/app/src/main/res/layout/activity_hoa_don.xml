@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hoadon">
+
+    <TextView
+        android:id="@+id/txtHoaDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Danh sách hóa đơn"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rdgLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rdDaTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Đã thanh toán"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rdChuaTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Chưa thanh toán"
+            android:textSize="15sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtDsHD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Danh sách hoá đơn:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lvHoaDon"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
